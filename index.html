@@ -4,15 +4,16 @@
 		<meta charset="utf-8">
 		<meta name="viewport" content="width=device-width, initial-scale=1">
 		<link href="https://cdn.jsdelivr.net/npm/the-new-css-reset@1.4.7/css/reset.min.css"  rel="stylesheet">
-		<link href="css/shared.css" rel="stylesheet" type="text/css">
-		<link href="css/links-hover.css" rel="stylesheet" type="text/css">
+		<link href="css/shared.css" rel="stylesheet">
+		<link href="css/links-hover.css" rel="stylesheet">
 	</head>
 	<body>
 		<h1>Some practical examples!</h1>
 
 		<section>
 			<p>This is <a href="second.html">an inline link to another page</a> in the same project.</p>
-			<a class="linked-area" href="second.html">
+			<!-- Note the double class! -->
+			<a class="linked-area rounded-container" href="second.html">
 				<img src="images/yosemite.jpg" >
 				<p>Links can also be set to <code>display: block;</code> or <code>display: flex;</code> and be used around whole sections of DOM.</p>
 			</a>
@@ -28,14 +29,14 @@
 			<p id="in-page"><strong>This paragraph has the <code>id</code>!</strong> Emerging technologies dichotomy subjectivism mundane domestic objects reciprocity transitory aesthetic object Barthes post-feminist. Emergent hetero-normative paradigm reductive DNA mnemonic cultural memory disparity modernity. Critical discourse prosaic banal hyperreal dialogical relationship profound intuition body politic. Systemic paradoxical temporal/spatial dynamics contextualizing tension individualism synecdoche.</p>
 		</section>
 
-		<section id="hover-block">
+		<section id="hover-block" class="rounded-container">
 			<p><strong>You can also use <code>:hover</code> on non-link elements.</strong></p>
-			<div>
+			<div class="rounded-container">
 				<img src="images/redwood.jpg" >
 				<p>This is a child of the gray block with <code>position: absolute;</code>!</p>
 			</div>
 		</section>
 
-		<a id="source-link" href="https://github.com/typography-and-interaction-too/some-examples">See the source code</a>
+		<a id="source-link" class="rounded-container" href="https://github.com/typography-and-interaction-too/some-examples">See the source code</a>
 	</body>
 </html>

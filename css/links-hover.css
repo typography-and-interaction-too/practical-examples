@@ -14,12 +14,10 @@ p a:hover {
 /* Targeting links with a class. */
 a.linked-area {
 	background-color: dodgerblue;
-	border-radius: 4px;
 	color: white;
 	display: flex; /* Our new friend flex! */
 	margin: 40px 0;
 	max-width: 800px;
-	padding: 20px;
 	gap: 20px; /* Between the flex children. */
 	align-items: center; /* Vertically center the children. */
 	transition: background-color 0.2s; /* Smooth the color change. */
@@ -47,12 +45,6 @@ a.linked-area img {
 	background-color: lightgray;
 	position: relative; /* For the absolute child. */
 	width: fit-content; /* Just what it needs. */
-}
-
-#hover-block,
-#hover-block div {
-	border-radius: 4px;
-	padding: 20px;
 }
 
 /* The child element. */

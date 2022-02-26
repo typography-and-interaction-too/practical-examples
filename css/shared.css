@@ -41,11 +41,17 @@ strong {
 	opacity: 0.333;
 }
 
+/* I gave all my filled-in containers this class, so I don’t have to repeat the rules. */
+.rounded-container {
+	border-radius: 4px;
+	box-shadow: 0 10px 20px rgba(0, 0, 0, 0.15);
+	padding: 20px;
+}
+
 
 
 #source-link {
 	background-color: tomato;
-	border-radius: 4px;
 	color: white;
 	padding: 10px;
 	position: fixed;
