@@ -6,7 +6,19 @@ body {
 h1 {
 	font-size: 200%;
 	font-weight: bold;
-	margin-bottom: 20px;
+	margin-bottom: 40px;
+}
+
+section {
+	margin-top: 80px;
+}
+
+p {
+	max-width: 65ch;
+}
+
+p:not(:first-of-type) {
+	margin-top: 16px;
 }
 
 /* Just to differentiate code examples. */
@@ -18,6 +30,9 @@ code {
 	font-size: 1.2em;
 	padding: 0.2em 0.4em;
 }
+
+
+
 /* Only inline links inside of paragraphs. */
 p a {
 	color: dodgerblue;
@@ -29,6 +44,14 @@ p a:hover {
 	color: deepskyblue;
 }
 
+strong {
+	font-weight: bold;
+}
+
+.faded {
+	opacity: 0.333;
+}
+
 
 
 /* Targeting links with a class. */
@@ -37,7 +60,8 @@ a.linked-area {
 	border-radius: 4px;
 	color: white;
 	display: flex; /* Our new friend flex! */
-	margin-top: 40px;
+	margin: 40px 0;
+	max-width: 800px;
 	padding: 20px;
 	gap: 20px; /* Between the flex children. */
 	align-items: center; /* Vertically center the children. */
@@ -52,4 +76,10 @@ a.linked-area:hover{
 /* Images inside this big link. */
 a.linked-area img {
 	max-width: 200px;
+}
+
+
+
+#in-page {
+	scroll-margin-top: 40px; /* This keeps some space above on anchor scrolling. */
 }
