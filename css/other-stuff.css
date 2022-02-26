@@ -24,12 +24,12 @@ summary + * {
 }
 
 /* A custom indicator. */
-details summary:after {
-	content:"+"; /* Inserts this text after. */
+details summary:before {
+	content:"+"; /* Inserts this text before. */
 	font-size: 1.2em;
-	margin-left: 0.5em;
+	margin-right: 1em;
 }
 
-details[open] summary:after {
+details[open] summary:before {
 	content:"–"; /* Change when it’s open. */
 }
