@@ -46,7 +46,7 @@ a.linked-area img {
 #hover-block {
 	background-color: lightgray;
 	position: relative; /* For the absolute child. */
-	width: 400px;
+	width: fit-content; /* Just what it needs. */
 }
 
 #hover-block,
