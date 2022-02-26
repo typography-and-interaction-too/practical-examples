@@ -4,3 +4,21 @@
 	color: white;
 	padding: 40px;
 }
+
+
+
+#scroll-vertical {
+	height: 300px; /* Needs a height to force the scrolling. */
+	overflow-y: scroll;
+	width: 600px;
+}
+
+/* Good semantic element to use. */
+#scroll-vertical header {
+	background-color: yellowgreen;
+	margin-bottom: 20px;
+	padding: 10px;
+	position: sticky; /* Within our scroll area. */
+	top: 0;
+	z-index: 1; /* In front of the following elements. */
+}
