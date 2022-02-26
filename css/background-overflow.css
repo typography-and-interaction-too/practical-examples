@@ -49,4 +49,5 @@ header {
 	transform: rotate(-5deg) skew(-5deg) scale(1.5); /* Rotate and scale! */
 	transform-origin: top left; /* Where to do it “from”. */
 	margin: 150px 0;
+	width: 50%;
 }

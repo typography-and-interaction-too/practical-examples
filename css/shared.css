@@ -5,8 +5,8 @@
 
 
 body {
+	font-family: 'IBM Plex Sans', sans-serif; /* From Google Fonts. */
 	padding: 80px 40px 50vh; /* Nice room at the end of the page. */
-	font-family: 'IBM Plex Sans', sans-serif;
 }
 
 h1 {
@@ -32,7 +32,7 @@ code {
 	background-color: rgba(0, 0, 0, 0.1);
 	border-radius: 0.2em;
 	display: inline-block;
-	font-family: 'IBM Plex Mono', monospace;
+	font-family: 'IBM Plex Mono', monospace; /* Google Fonts. */
 	padding: 0.2em 0.4em;
 	font-size: 0.9em;
 	white-space: pre; /* Prevents line breaks. */
@@ -64,9 +64,9 @@ strong {
 #source-link {
 	background-color: tomato;
 	color: white;
+	font-family: 'IBM Plex Mono', monospace;
 	padding: 0.5em 0.75em;
 	position: fixed;
 	right: 20px;
 	top: 20px;
-	font-family: 'IBM Plex Mono', monospace;
 }
