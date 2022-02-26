@@ -1,10 +1,16 @@
+/* This is from Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400&family=IBM+Plex+Sans:ital,wght@0,400;0,700;1,400;1,700&display=swap');
+
+
+
+
 body {
 	padding: 80px 40px 50vh; /* Nice room at the end of the page. */
-	font-family: sans-serif;
+	font-family: 'IBM Plex Sans', sans-serif;
 }
 
 h1 {
-	font-size: 300%;
+	font-size: 4em;
 	font-weight: bold;
 	margin-bottom: 40px;
 }
@@ -26,10 +32,14 @@ code {
 	background-color: rgba(0, 0, 0, 0.1);
 	border-radius: 0.2em;
 	display: inline-block;
-	font-family: monospace;
-	font-size: 1.2em;
+	font-family: 'IBM Plex Mono', monospace;
 	padding: 0.2em 0.4em;
+	font-size: 0.9em;
 	white-space: pre; /* Prevents line breaks. */
+}
+
+em {
+	font-style: italic;
 }
 
 strong {
@@ -39,7 +49,7 @@ strong {
 
 
 .faded {
-	opacity: 0.333;
+	opacity: 0.4;
 }
 
 /* I gave all my filled-in containers this class, so I don’t have to repeat the rules. */
@@ -54,8 +64,9 @@ strong {
 #source-link {
 	background-color: tomato;
 	color: white;
-	padding: 10px;
+	padding: 0.5em 0.75em;
 	position: fixed;
 	right: 20px;
 	top: 20px;
+	font-family: 'IBM Plex Mono', monospace;
 }
