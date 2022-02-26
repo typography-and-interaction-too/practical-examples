@@ -9,6 +9,15 @@ h1 {
 	margin-bottom: 20px;
 }
 
+/* Just to differentiate code examples. */
+code {
+	background-color: rgba(0, 0, 0, 0.1);
+	border-radius: 0.2em;
+	display: inline-block;
+	font-family: monospace;
+	font-size: 1.2em;
+	padding: 0.2em 0.4em;
+}
 /* Only inline links inside of paragraphs. */
 p a {
 	color: dodgerblue;
@@ -18,4 +27,29 @@ p a {
 /* Simple hover color change on these links. */
 p a:hover {
 	color: deepskyblue;
+}
+
+
+
+/* Targeting links with a class. */
+a.linked-area {
+	background-color: dodgerblue;
+	border-radius: 4px;
+	color: white;
+	display: flex; /* Our new friend flex! */
+	margin-top: 40px;
+	padding: 20px;
+	gap: 20px; /* Between the flex children. */
+	align-items: center; /* Vertically center the children. */
+	transition: background-color 0.2s; /* Smooth the color change. */
+}
+
+/* Change the background on hover. */
+a.linked-area:hover{
+	background-color: deepskyblue;
+}
+
+/* Images inside this big link. */
+a.linked-area img {
+	max-width: 200px;
 }
