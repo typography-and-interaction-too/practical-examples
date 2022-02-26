@@ -40,3 +40,38 @@ a.linked-area img {
 #in-page {
 	scroll-margin-top: 40px; /* This keeps some space above on anchor scrolling. */
 }
+
+
+
+#hover-block {
+	background-color: lightgray;
+	position: relative; /* For the absolute child. */
+	width: 400px;
+}
+
+#hover-block,
+#hover-block div {
+	border-radius: 4px;
+	padding: 20px;
+}
+
+/* The child element. */
+#hover-block div {
+	background-color: gold;
+	bottom: 0;
+	left: calc(100% + 20px);
+	opacity: 0; /* You can’t transition visibility, but can use opacity at the same time. */
+	position: absolute;
+	transition: all 1s; /* Less blinky! */
+	visibility: hidden; /* Hidden by default. */
+}
+
+#hover-block:hover div {
+	opacity: 1; /* For a smooth transition. */
+	visibility: visible; /* Shown when hovering over the parent. */
+}
+
+#hover-block div img {
+	margin-bottom: 10px;
+	max-width: 300px;
+}
