@@ -1,0 +1,35 @@
+details {
+	background-color: orange;
+	transition: background-color 1s;
+	width: 700px;
+}
+
+/* This is an attribute selector for when it is “open”. */
+details[open] {
+	background-color: gold;
+}
+
+summary {
+	cursor: pointer; /* Gives it the link cursor, which it doesn’t have by default. */
+	font-weight: bold;
+	list-style: none; /* Hides the default dot in Chrome. */
+}
+
+/* Hide the default little arrow in Safari. */
+summary::-webkit-details-marker { display: none; }
+
+/* Any element right after the summary. */
+summary + * {
+	margin-top: 20px;
+}
+
+/* A custom indicator. */
+details summary:after {
+	content:"+"; /* Inserts this text after. */
+	font-size: 1.2em;
+	margin-left: 0.5em;
+}
+
+details[open] summary:after {
+	content:"–"; /* Change when it’s open. */
+}
