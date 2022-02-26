@@ -17,7 +17,7 @@ a.linked-area {
 	color: white;
 	display: flex; /* Our new friend flex! */
 	margin: 40px 0;
-	max-width: 800px;
+	max-width: 75%;
 	gap: 20px; /* Between the flex children. */
 	align-items: center; /* Vertically center the children. */
 	transition: background-color 0.2s; /* Smooth the color change. */
