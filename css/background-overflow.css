@@ -38,6 +38,11 @@ header {
 	margin-top: initial; /* Clear the default paragraph spacing. */
 }
 
+#scroll-vertical::-webkit-scrollbar,
+#scroll-horizontal::-webkit-scrollbar {
+	display: none; /* This will hide chonky Windows scrollbars in Chrome. */
+}
+
 
 
 #transforms {

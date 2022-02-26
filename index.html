@@ -4,6 +4,7 @@
 		<meta charset="utf-8">
 		<meta name="viewport" content="width=device-width, initial-scale=1">
 		<link href="https://cdn.jsdelivr.net/npm/the-new-css-reset@1.4.7/css/reset.min.css"  rel="stylesheet">
+		<!-- Note I have split my CSS and organized it in a folder. -->
 		<link href="css/shared.css" rel="stylesheet">
 		<link href="css/links-hover.css" rel="stylesheet">
 		<link href="css/details-summary.css" rel="stylesheet">
@@ -15,15 +16,16 @@
 		<section>
 			<p>This page uses a font (<a href="https://www.ibm.com/plex/"><em>Plex</em></a>) from <a href="https://fonts.google.com">Google Fonts</a>.</p>
 			<p class="faded">Choose a family and styles there that you want to use. Then include the <code>&lt;link&gt;</code> element they provide you in your <code>&lt;head&gt;</code>—or as I’ve done here, the <code>@import</code> line in your CSS. Add the corresponding <code>font-family</code> rule and you should see the font!</p>
-
 		</section>
 
 		<section>
 			<p>This is <a href="second.html">an inline link to another page</a> in the same project.</p>
 			<!-- Note the double class! -->
 			<a class="linked-area rounded-container" href="second.html">
+				<!-- Images in a separate folder. -->
 				<img src="images/yosemite.jpg" >
 				<p>Links can also be set to <code>display: block;</code> or <code>display: flex;</code> and be used around whole sections of DOM.</p>
+				<!-- Links can have lots of children! -->
 			</a>
 			<p>This will <a href="#in-page">link in this page</a> to the element with the <code>id</code>, below.</p>
 		</section>
@@ -42,6 +44,7 @@
 			<div class="rounded-container">
 				<img src="images/redwood.jpg" >
 				<p>This is a child of the gray block with <code>position: absolute;</code>!</p>
+				<!-- You could have a whole “page” in here. -->
 			</div>
 		</section>
 
@@ -82,7 +85,7 @@
 			<p><em>I am excited to see your projects!</em></p>
 		</section>
 
-
+		<!-- I hope you are seeing this source code! -->
 		<a id="source-link" class="rounded-container" href="https://github.com/typography-and-interaction-too/some-examples">See the source code</a>
 	</body>
 </html>
