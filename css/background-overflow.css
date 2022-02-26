@@ -1,5 +1,5 @@
 #background-image {
-	background-image: url(/images/sunset.jpg); /* Note the slash to start, here. */
+	background-image: url(../images/sunset.jpg); /* Note the start, here. */
 	background-size: cover; /* So it scales to cover the element. */
 	color: white;
 	padding: 40px;
