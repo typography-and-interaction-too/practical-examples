@@ -6,6 +6,7 @@
 
 body {
 	font-family: 'IBM Plex Sans', sans-serif; /* From Google Fonts. */
+	overflow-x: hidden; /* Prevent horizontal scroll when you position things “off screen”. */
 	padding: 80px 40px 50vh; /* Nice room at the end of the page. */
 }
 
@@ -69,4 +70,5 @@ strong {
 	position: fixed;
 	right: 20px;
 	top: 20px;
+	z-index: 1;
 }
