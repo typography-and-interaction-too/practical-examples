@@ -7,18 +7,33 @@
 
 
 
-#scroll-vertical {
-	height: 300px; /* Needs a height to force the scrolling. */
-	overflow-y: scroll;
-	width: 600px;
-}
-
-/* Good semantic element to use. */
-#scroll-vertical header {
-	background-color: yellowgreen;
-	margin-bottom: 20px;
-	padding: 10px;
+/* Good semantic element to use for these. */
+header {
+	background-color: aquamarine;
+	left: 0;
 	position: sticky; /* Within our scroll area. */
 	top: 0;
 	z-index: 1; /* In front of the following elements. */
+}
+
+#scroll-vertical {
+	height: 300px; /* Needs a height to force the scrolling. */
+	overflow-y: scroll; /* Vertical scrolling within. */
+	width: 50%;
+}
+
+#scroll-vertical header {
+	margin-bottom: 20px;
+}
+
+#scroll-horizontal {
+	display: flex; /* Make it a row. */
+	column-gap: 20px;
+	overflow-x: scroll; /* Horizontal scrolling within. */
+}
+
+/* Targets all of the direct children paragraphs. */
+#scroll-horizontal > p {
+	flex-shrink: 0; /* So they don’t smush down. */
+	margin-top: initial; /* Clear the default paragraph spacing. */
 }

@@ -29,6 +29,7 @@ code {
 	font-family: monospace;
 	font-size: 1.2em;
 	padding: 0.2em 0.4em;
+	white-space: pre; /* Prevents line breaks. */
 }
 
 strong {
