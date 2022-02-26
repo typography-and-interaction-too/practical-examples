@@ -1,5 +1,5 @@
 body {
-	padding: 20px;
+	padding: 80px 40px;
 	font-family: sans-serif;
 }
 
@@ -13,4 +13,9 @@ h1 {
 p a {
 	color: dodgerblue;
 	text-decoration: underline;
+}
+
+/* Simple hover color change on these links. */
+p a:hover {
+	color: deepskyblue;
 }
