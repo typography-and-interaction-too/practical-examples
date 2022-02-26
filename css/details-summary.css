@@ -1,7 +1,7 @@
 details {
 	background-color: orange;
 	transition: background-color 1s;
-	width: 750px;
+	max-width: fit-content;
 }
 
 /* This is an attribute selector for when it is “open”. */
