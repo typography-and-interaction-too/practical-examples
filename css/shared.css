@@ -3,6 +3,12 @@ body {
 	font-family: sans-serif;
 }
 
+h1 {
+	font-size: 200%;
+	font-weight: bold;
+	margin-bottom: 20px;
+}
+
 /* Only inline links inside of paragraphs. */
 p a {
 	color: dodgerblue;
