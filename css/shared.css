@@ -14,14 +14,14 @@ section {
 }
 
 p {
-	max-width: 65ch;
+	max-width: 65ch; /* Control line length for readability. */
 }
 
 p:not(:first-of-type) {
 	margin-top: 16px;
 }
 
-/* Just to differentiate code examples. */
+/* To differentiate code examples. */
 code {
 	background-color: rgba(0, 0, 0, 0.1);
 	border-radius: 0.2em;
@@ -31,22 +31,11 @@ code {
 	padding: 0.2em 0.4em;
 }
 
-
-
-/* Only inline links inside of paragraphs. */
-p a {
-	color: dodgerblue;
-	text-decoration: underline;
-}
-
-/* Simple hover color change on these links. */
-p a:hover {
-	color: deepskyblue;
-}
-
 strong {
 	font-weight: bold;
 }
+
+
 
 .faded {
 	opacity: 0.333;
@@ -62,36 +51,4 @@ strong {
 	position: fixed;
 	right: 20px;
 	top: 20px;
-}
-
-
-
-/* Targeting links with a class. */
-a.linked-area {
-	background-color: dodgerblue;
-	border-radius: 4px;
-	color: white;
-	display: flex; /* Our new friend flex! */
-	margin: 40px 0;
-	max-width: 800px;
-	padding: 20px;
-	gap: 20px; /* Between the flex children. */
-	align-items: center; /* Vertically center the children. */
-	transition: background-color 0.2s; /* Smooth the color change. */
-}
-
-/* Change the background on hover. */
-a.linked-area:hover{
-	background-color: deepskyblue;
-}
-
-/* Images inside this big link. */
-a.linked-area img {
-	max-width: 200px;
-}
-
-
-
-#in-page {
-	scroll-margin-top: 40px; /* This keeps some space above on anchor scrolling. */
 }
